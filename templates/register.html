@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login</title>
+<link href="../static/css/bootstrap.css" rel="stylesheet">
+<link href="../static/css/addon.css" rel="stylesheet">
+<link rel="import" href="header.html">
+</head>
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<body>
+	<script>
+		var link = document.querySelector('link[rel=import]');
+        var content = link.import.querySelector('#intro-hd');
+        document.body.appendChild(content.cloneNode(true));
+	</script>
+	<div class = "container">
+		<form action = "" method = "post">
+			<div class ="row">
+				<div class = "col-md-offset-5 col-md-4">
+					<div class = "form-login">
+						<h2 class ="form-signin-heading">Registration</h4>
+						<input type = "text" id = "username" name = "txt-name" class = "form-control input-sm chat-input"
+							placeholder = "Username" value = "">
+						</br>
+						<input type = "password" id = "password" name = "txt-pass", class = "form-control input-sm chat-input"
+							placeholder = "Password" value = "">
+						</br>
+						<input type = "password" id = "password" name = "txt-pass", class = "form-control input-sm chat-input"
+							placeholder = "Confirm password" value = ""
+							>
+						</br>
+						<input type = "email" id = "email" name = "txt-email" class = "form-control input-sm chat-input"
+							placeholder = "Email" value = ""
+							>
+						</br>
+						<div class = "wrapper">
+							<span class = "group-btn">
+								<button type = "submit" name = "btn-regme" class = "btn btn-primary btn-md">Registration<i class = "fa fa-check-square-o"></i></button>
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+</body>
+</html>

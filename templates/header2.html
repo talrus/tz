@@ -1,0 +1,19 @@
+<div id = "intro-hd2">
+	<nav class="navbar navbar-default">
+	  <div class="container-fluid">
+		<div class="navbar-header">
+		  <a class="navbar-brand" href="index.php">MyBloG</a>
+		</div>
+		<ul class="nav navbar-nav">
+		  <li><a href="templates/login.php">Login</a></li>
+		  <li><a href="templates/register.php">Registration</a></li>
+		  <?php
+			if(($user->is_loggedin()!="") AND ($user->getRole() == '7')) { 
+			echo '<li><a href="templates/envy.php">Add Post</a></li>';
+			}
+			?>
+		  <li><a href="templates/logout.php">Logout</a></li>
+		</ul>
+	  </div>
+	</nav>
+</div>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login</title>
+<link href="../static/css/bootstrap.css" rel="stylesheet">
+<link href="../static/css/addon.css" rel="stylesheet">
+<link rel="import" href="header.html">
+
+</head>
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<body>
+	<script>
+		var link = document.querySelector('link[rel=import]');
+        var content = link.import.querySelector('#intro-hd');
+        document.body.appendChild(content.cloneNode(true));
+	</script>
+	<div class = "container">
+		<form class = "form-signin" action ="" method = "post">
+			<div class ="row">
+				<div class = "col-md-offset-5 col-md-4">
+						<div class = "form-login">
+							<h2 class ="form-signin-heading">Welcome back</h4>
+							<input type = "text" id = "username" name = "name" class = "form-control input-sm chat-input"
+							placeholder = "Username" required>
+							</br>
+							<input type = "password" id = "password" name = "pass" class = "form-control input-sm chat-input"
+							placeholder = "Password" required>
+							</br>
+							<div class = "wrapper">
+								<span class = "group-btn">
+									<button type = "submit" class = "btn btn-primary btn-md" name = "btn-login">Sign In<i class = "fa fa-sign-in"></i></button>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+		</form>
+	</div>
+	
+</body>
+</html>
